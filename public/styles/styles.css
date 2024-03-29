@@ -6,13 +6,18 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-image: url(../images/pexels-picjumbocom-196652.jpg);
+    background-size:contain;
+    background-repeat: repeat;
 }
 
 header {
-    background-image: url(../images/pexels-picjumbocom-196652.jpg);
+    /* background-image: url(../images/pexels-picjumbocom-196652.jpg);
     background-size: cover;
+    background-repeat: repeat; */
     color: #fff;
+    height: 40vh;
+    width: 100%;
 }
 
 #about-dj-days {
@@ -21,7 +26,7 @@ header {
 }
 
 .about-content {
-    background: rgba(0, 0, 0, 0.80);
+    background: #000000c9;
 }
 
 #about-dj-days div h1 {
@@ -33,33 +38,97 @@ header {
 #about-dj-days div p {
     box-shadow: inset 3px 0px 3px #fff;
     padding: 20px;
+    font: 50px;
 }
 
-#currently-playing-container {
-    display: block;
-    height: 30vh;
-    width: 100%;
-    /* background-image: url(../images/pexels-pixabay-417458.jpg); */
-    /* background-size: cover; */
+main {
+    padding: 20px;
+    background-color: #000000e3;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    /* transform: translateY(-80px) */
 }
 
-#jukebox {
-    display: flex;
+#nav-options {
+    text-align: center;
+    padding: 20px;
+}
+#nav-options div {
+    padding: 20px;
+}
+
+#nav-options div p {
+    color: #fff;
+    padding: 20px;
+}
+
+#search-filters {
+    visibility: visible;
+}
+
+#search-filters a {
+    text-decoration: none;
+    color: #fff;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+#search-filters a:hover {
+    text-decoration: underline;
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+input {
+    padding: 10px 20px;
+    border-radius: ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: #fff solid 1px;
+    background-color: transparent;
+    caret-color: #fff;
+    color: #fff;
+}
+
+input:focus {
+    outline: 0;
+    font-weight: bold;
+    border-bottom: #fff solid 2px;
+}
+
+#nav-options button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+
+}
+
+#jukebox ul{
     justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
     height: 100%;
 }
 
-#music-cards {
-    display: flex;
+#jukebox li {
+    list-style-type: none;
 }
 
 .album-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
-    box-shadow: 0 20px 40px -14px #ffffff80;
+    box-shadow: 0 15px 15px -10px #ffffff8a;
     border-radius: 10px;
 }
 
@@ -76,7 +145,7 @@ header {
 .album-content {
     position: absolute;
     bottom: 0;
-    background-color: #373737e6;
+    background-color: #ffffffc8;
     color: #fff;
     width: 100%;
     padding: 20px;
@@ -84,14 +153,16 @@ header {
     transition: transform 0.5s ease;
 }
 
-album-container:hover .album-content {
-    transform: translateY(0);
+.album-container:hover .album-content {
+    transform: translateY(0px);
 }
 
 .album-content h3, .album-content p, .album-content a {
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: 0;
     transform: translateY(30px);
+    text-decoration: none;
+    color: #000;
 }
 
 .album-content:hover h3, .album-content:hover p, .album-content:hover a {
@@ -99,7 +170,7 @@ album-container:hover .album-content {
     transform: translateY(0);
 }
 
-.button {
+/* .button {
     display: inline-flex;
     align-items: center;
     color: #fff;
@@ -114,9 +185,14 @@ album-container:hover .album-content {
     background-color: #89002e;
     transform: translateX(4px);
     transition: transform 0.3s ease;
-}
+} */
 
 footer {
     height: 10vh;
+    position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient( #b1aaff, #5849ff, #1500ff)
+
 }

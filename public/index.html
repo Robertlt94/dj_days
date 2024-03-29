@@ -13,25 +13,54 @@
             <div class="about-content"><h1>DJ Days</h1></div>
             <div class="about-content"><p>A dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. Features allow users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the "now playing" music.</p></div>
         </div>
-        <div id="currently-playing-container">
-            <div id="album-image">
-                <img src="" alt="">
-            </div>
-            <div id="album-info">
-            </div>
-        </div>
     </header>
     <main>
         <div id="nav-options">
             <div>
-                <nav><a href="#">All</a><a href="#">A-Z</a><a href="#">Album</a><a href="#">Favorites</a></nav>
+                <input type="text" id="music-search-input"><button id="music-search-btn" >Search</button>
             </div>
             <div>
-                <input type="text" id="music-search-input"><button id="music-search-btn">Search</button>
+                <p>Need help? Try these preset <span><a href="#" id="search-filter-visibility">filters:</a></span></p><nav id="search-filters"><a href="#">All</a><a href="#">A-Z</a><a href="#">Album</a><a href="#">Favorites</a></nav>
             </div>
         </div>
         <div id="jukebox">
-            <ul class="music-cards">
+            <ul id="music-cards">
+                <li>
+                    <div class="album-container">
+                        <img src="./images/pexels-pixabay-417458.jpg" alt="concert lights of various colors">
+                        <div class="album-content">
+                            <h3>Test Album</h3>
+                            <p>Rock on!</p>
+                            <a href="#" class="album-select-btn">
+                                More
+                            </a>
+                        </div>
+                    </div> 
+                </li>
+                <li>
+                    <div class="album-container">
+                        <img src="./images/pexels-pixabay-417458.jpg" alt="concert lights of various colors">
+                        <div class="album-content">
+                            <h3>Test Album</h3>
+                            <p>Rock on!</p>
+                            <a href="#" class="album-select-btn">
+                                More
+                            </a>
+                        </div>
+                    </div> 
+                </li>
+                <li>
+                    <div class="album-container">
+                        <img src="./images/pexels-pixabay-417458.jpg" alt="concert lights of various colors">
+                        <div class="album-content">
+                            <h3>Test Album</h3>
+                            <p>Rock on!</p>
+                            <a href="#" class="album-select-btn">
+                                More
+                            </a>
+                        </div>
+                    </div> 
+                </li>
                 <li>
                     <div class="album-container">
                         <img src="./images/pexels-pixabay-417458.jpg" alt="concert lights of various colors">
@@ -81,14 +110,15 @@
                     </div> 
                 </li>
             </ul>
+
         </div>
     </main>
     <footer>
         <div>
-            <img src="" alt="">
-            <p>
-
-            </p>
+            <!-- currently playing image goes here, if no img, default, if nothing playing, leave blank. -->
+        </div>
+        <div>
+            <!-- currently playing information goes here, if nothing playing, add animation -->
         </div>
     </footer>
 </body>
