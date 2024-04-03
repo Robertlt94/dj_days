@@ -165,7 +165,6 @@ input:focus {
 .album-content h3, .album-content p, .album-content a {
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: 100%;
-    transform: translateY(0);
     color: black;
 }
 
@@ -177,16 +176,40 @@ footer {
     right: 0;
     background-image: linear-gradient( #b1aaff, #3f2efa, #3f3a74);
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr;
     padding: 2vh;
     align-items: center;
 }
 
 #current-song-cover-art {
-    background-size: cover;
-    /* background-image: url(./images/pexels-medhat-ayad-447592.jpg); */
+    height: inherit;
+}
+
+#cover-art {
+    width: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -20%);
+}
+
+#cover-art img {
+    height: 300px;
+    width: 300px;
+    animation: rotating 10s linear infinite;
     border-radius: 50%;
-    background-color: #000;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#cover-art:hover {
+    transition: transform 1s ease;
+    transform: translateY(-50%);
 }
 
 #current-song-info {
@@ -204,7 +227,6 @@ footer {
 #info-banner {
     color: #fff;
     letter-spacing: 1px;
-    flex-wrap: wrap;
 }
 
 #info-banner h3 {
@@ -213,16 +235,13 @@ footer {
 
 #info-banner, #info-banner h3 {
     width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll 15s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
     to {
-        transform: translate(-250%);
+        transform: translate(-100%);
     }
 }
 
-#music-controls audio::-webkit-media-controls-panel {
-    background-color: #404aff00;
-}
+/* need to customize audio player properties */
