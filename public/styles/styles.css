@@ -57,6 +57,20 @@ main {
     padding: 20px;
 }
 
+#search-filter-visibility {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: solid 2px underline #fff;
+    letter-spacing: 2px;
+    border-bottom: #ffffff;
+}
+
+#search-filter-visibility:hover {
+    color: #b1aaff;
+    text-decoration: solid 2px underline #b1aaff;
+}
+
+/* onclick with JS to toggle visibility */
 #search-filters {
     visibility: visible;
 }
