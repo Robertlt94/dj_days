@@ -1,29 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Orbitron", sans-serif;
 }
 
 body {
     height: 100%;
     width: 100%;
-    background-image: url(../images/pexels-picjumbocom-196652.jpg);
-    background-size:contain;
-    background-repeat: repeat;
 }
 
-header {
+nav {
+    height: 100vh;
+    left: 0;
+    background-color: #292F36;
+    width: 20vw;
+    position: fixed;
     color: #fff;
-    height: 40vh;
+}
+
+#nav-header {
+    padding: 60px 0px;
+    text-align: center;
+    height: 10vh;
+    display: block;
+}
+
+#nav-header h1 {
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+}
+
+ul a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul a:hover, ul a:active {
+    background-color: #fff;
+    color: #292F36;
+    text-align: right;
+    transition: text-align 1s ease-in-out;                                                                                                                                                                                                                                                                                                                                                                                                                                                                           right;
+}
+
+#nav-footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
-#about-dj-days {
-    display:inline-flex;
+#nav-footer p {
+    text-align: center;
+    /* padding: 20px 0px; */
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
-.about-content {
+main {
+    background-color: #494a4e;
+    width: 80vw;
+    height: 100vh;
+    right: 0;
+    position: fixed;
+}
+
+#main-visual {
+    padding: 20px;
+    height: 30vh;
+    width: 100%;
+    background-image: url(../images/pexels-picjumbocom-196652.jpg);
+    background-size: cover;
+    background-position: 0 -250px;
+}
+
+#about-content {
     flex: 1fr;
-    background: #000000c9;
+    color: #fff;
+    font-size: 30px;
 }
 
 #about-dj-days div h1 {
@@ -34,15 +95,14 @@ header {
 
 #about-dj-days div p {
     padding: 20px;
+}
+
+#about-content p {
+    padding: 20px;
     font: 50px;
 }
 
-main {
-    padding: 20px;
-    background-color: #000000e3;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-}
+
 
 #nav-options {
     text-align: center;
@@ -121,7 +181,7 @@ input:focus {
 #jukebox ul{
     justify-content: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     column-gap: 20px;
     row-gap: 20px;
     height: 100%;
@@ -182,7 +242,7 @@ input:focus {
     color: black;
 }
 
-footer {
+/* footer {
     height: 5vh;
     position: fixed;
     bottom: 0;
@@ -259,4 +319,7 @@ footer {
     }
 }
 
-/* need to customize audio player properties */
+audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
+  background-color: #fff;
+  color: #fff;
+} */

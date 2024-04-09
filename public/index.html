@@ -8,21 +8,35 @@
     <script src="scripts/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <div id="about-dj-days">
-            <div class="about-content"><h1>DJ Days</h1></div>
-            <div class="about-content"><p>A dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. Features allow users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the "now playing" music.</p></div>
-        </div>
-    </header>
+    <nav>
+        <header id="nav-header">
+            <h1>DJ DAYS</h1>
+        </header>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Add a Song</li></a>
+            <a href="#"><li>Contact Us</li></a>
+        </ul>
+        <footer id="nav-footer">
+            <p>DJ DAYS &copy;</p>
+        </footer>
+    </nav>
     <main>
-        <div id="nav-options">
+        <!-- <div id="about-content">
+            <p>A dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. Features allow users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the "now playing" music.</p>
+        </div> -->
+        <!-- <div id="nav-options">
             <div>
                 <input type="text" id="music-search-input"><button id="music-search-btn" ><h2>Search</h2></button>
             </div>
             <div>
                 <h4>Need help? Try these preset search <a href="#" id="search-filter-visibility">filters</a></h4><nav id="search-filters"><h3><a href="#">All</a><a href="#">A-Z</a><a href="#">Album</a><a href="#">Favorites</a></h3></nav>
             </div>
-        </div>
+        </div> -->
+        <section id="main-visual">
+
+        </section>
         <div id="jukebox">
             <ul id="music-cards">
                 <li>
@@ -133,20 +147,32 @@
                         </div>
                     </div> 
                 </li>
+                <li>
+                    <div class="album-container">
+                        <img src="./images/sorry emoji.jpeg" alt="A sad emoji holding up a sorry sign">
+                        <div class="album-content">
+                            <h3>Can't find your song?</h3>
+                            <br>
+                            <a href="#" class="album-select-btn">
+                                Add A New Song
+                            </a>
+                        </div>
+                    </div> 
+                </li>
             </ul>
         </div>
     </main>
-    <footer>
+    <!-- <footer>
         <div id="current-song-cover-art">
-            <!-- currently playing image goes here, if no img, default, if nothing playing, leave blank. -->
-            <!-- <img src="./images/pexels-medhat-ayad-447592.jpg" alt="A mono tone arrangement of fruniture"> -->
+            currently playing image goes here, if no img, default, if nothing playing, leave blank.
+            <img src="./images/pexels-medhat-ayad-447592.jpg" alt="A mono tone arrangement of fruniture">
             <div id="cover-art">
-                <!-- image goes here via css -->
+                image goes here via css
                 <img src="./images/pexels-medhat-ayad-447592.jpg" alt="A mono tone arrangement of fruniture">
             </div>
         </div>
         <div id="current-song-info">
-            <!-- currently playing information goes here, if nothing playing, add animation -->
+            currently playing information goes here, if nothing playing, add animation
             <div id="info-banner">
                 <h3>Simple Things by Test Test</h3>
             </div>
@@ -156,6 +182,6 @@
                 <source src="" type="audio/mp3">
             </audio>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
