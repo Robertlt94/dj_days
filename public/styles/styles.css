@@ -1,67 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Prata&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Orbitron", sans-serif;
 }
 
 body {
     height: 100%;
     width: 100%;
+    font-family: "Prata", serif;
+    color: #;
 }
 
 nav {
     height: 100vh;
-    left: 0;
     background-color: #292F36;
     width: 20vw;
     position: fixed;
     color: #fff;
+    font-family: "Orbitron", sans-serif;
 }
 
 #nav-header {
     padding: 60px 0px;
     text-align: center;
     height: 10vh;
-    display: block;
 }
 
 #nav-header h1 {
     font-size: 50px;
 }
 
-ul {
-    list-style-type: none;
-    display: block;
+#nav-header:hover {
+    transform: rotate(360deg);
+    animation: spinOnHover 1s linear 1;
 }
 
-ul a {
+@keyframes spinOnHover {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360def);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a {
     display: block;
     padding: 20px 20px;
     text-decoration: none;
     color: #fff;
 }
 
-ul a:hover, ul a:active {
+nav ul a:hover {
     background-color: #fff;
     color: #292F36;
-    text-align: right;
-    transition: text-align 1s ease-in-out;                                                                                                                                                                                                                                                                                                                                                                                                                                                                           right;
-}
+    transform: translateX(50px);
+    transition: transform 1s ease;
+};
 
 #nav-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    height: 20vh;
+    background-color: white;
 }
 
 #nav-footer p {
     text-align: center;
-    /* padding: 20px 0px; */
-    /* margin-left: auto;
-    margin-right: auto; */
+    padding: 20px;
 }
 
 main {
@@ -70,15 +83,86 @@ main {
     height: 100vh;
     right: 0;
     position: fixed;
+    font-family: Futura;
 }
 
-#main-visual {
+#main-visual-container {
     padding: 20px;
     height: 30vh;
     width: 100%;
     background-image: url(../images/pexels-picjumbocom-196652.jpg);
     background-size: cover;
     background-position: 0 -250px;
+}
+
+#current-song-cover-art {
+    height: inherit;
+}
+
+#cover-art {
+    width: 100%;
+    object-fit: cover;
+    background-color: black;
+    /* transform: translate(-50%, -20%); */
+}
+
+/* #cover-art img {
+    height: 300px;
+    width: 300px;
+    animation: rotating 10s linear infinite;
+    border-radius: 50%;
+    border: #fff solid 1px;
+} */
+
+/* @keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+/* #cover-art:hover {
+    transition: transform 1s ease;
+    transform: translateY(-50%);
+} */
+
+#current-song-info {
+    max-width: 100%;
+    overflow: hidden;
+    mask: linear-gradient(
+        90deg, 
+        transparent, 
+        blue 20%,
+        blue 80%,
+        transparent
+    );
+}
+
+#info-banner {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#info-banner h3 {
+    transform: translateX(100%);
+}
+
+#info-banner, #info-banner h3 {
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(-100%);
+    }
+}
+
+audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
+  background-color: #fff;
+  color: #fff;
 }
 
 #about-content {
@@ -241,85 +325,3 @@ input:focus {
     opacity: 100%;
     color: black;
 }
-
-/* footer {
-    height: 5vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient( #b1aaff, #3f2efa, #3f3a74);
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    padding: 2vh;
-    align-items: center;
-}
-
-#current-song-cover-art {
-    height: inherit;
-}
-
-#cover-art {
-    width: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -20%);
-}
-
-#cover-art img {
-    height: 300px;
-    width: 300px;
-    animation: rotating 10s linear infinite;
-    border-radius: 50%;
-    border: #fff solid 1px;
-}
-
-@keyframes rotating {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-#cover-art:hover {
-    transition: transform 1s ease;
-    transform: translateY(-50%);
-}
-
-#current-song-info {
-    max-width: 100%;
-    overflow: hidden;
-    mask: linear-gradient(
-        90deg, 
-        transparent, 
-        blue 20%,
-        blue 80%,
-        transparent
-    );
-}
-
-#info-banner {
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-#info-banner h3 {
-    transform: translateX(100%);
-}
-
-#info-banner, #info-banner h3 {
-    width: max-content;
-    animation: scroll 10s linear infinite;
-}
-
-@keyframes scroll {
-    to {
-        transform: translate(-100%);
-    }
-}
-
-audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
-  background-color: #fff;
-  color: #fff;
-} */
