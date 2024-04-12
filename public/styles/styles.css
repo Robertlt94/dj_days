@@ -10,7 +10,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: "Prata", serif;
-    color: #;
+    color: #fff;
 }
 
 nav {
@@ -83,7 +83,6 @@ main {
     height: 100vh;
     right: 0;
     position: fixed;
-    font-family: Futura;
 }
 
 #main-visual-container {

@@ -1,0 +1,16 @@
+{
+  "name": "dj_days",
+  "version": "1.0.0",
+  "description": "Welcome to **DJ Days**, a dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. **DJ Days** allows users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the \"now playing\" music.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
