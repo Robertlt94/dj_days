@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Select a song to play music",
+        "artist": "",
+        "released": "",
+        "youtube-link": "",
+        "image": "./images/no-music"
+    },
+    {
+        "title": "Mockingbird",
+        "artist": "Eminem",
+        "released": "2004",
+        "youtube-link": "https://www.youtube.com/watch?v=37V3b39_EXw&ab_channel=DanMusic",
+        "image": "./images/eminem"
+    },
+    {
+        "title": "Little Bit Better",
+        "artist": "Caleb Hearn & Rosie",
+        "released": "2024",
+        "youtube-link": "https://www.youtube.com/watch?v=u9GqI2zfOZc",
+        "image": "./images/little-bit-better"
+    },
+    {
+        "title": "At Least",
+        "artist": "Jessica Baio",
+        "released": "2022",
+        "youtube-link": "https://www.youtube.com/watch?v=MtGSGjk_5FU&ab_channel=JessicaBaio",
+        "image": "./images/at-least"
+    },
+    {
+        "title": "Flip It",
+        "artist": "Levity",
+        "released": "2023",
+        "youtube-link": "https://www.youtube.com/watch?v=ZjUeXWIQ4Pc&ab_channel=DubstepuNk",
+        "image": "./images/flip-it"
+    },
+    {
+        "title": "Changes",
+        "artist": "Jeremih",
+        "released": "2022",
+        "youtube-link": "https://www.youtube.com/watch?v=AyjcebbGeT8&ab_channel=OrbitalMusic",
+        "image": "./images/changes"
+    },
+    {
+        "title": "Invitation Ft. Gaeko",
+        "artist": "Junny",
+        "released": "2023",
+        "youtube-link": "https://www.youtube.com/watch?v=Ov4XVKcgJbg&ab_channel=JUNNY",
+        "image": "./images/invitation"
+    },
+    {
+        "title": "Slow Dance In A Parking Lot",
+        "artist": "Jordan Davis",
+        "released": "2018",
+        "youtube-link": "https://www.youtube.com/watch?v=HTdmcNy_cbs&ab_channel=JenniOrdo%C3%B1ez",
+        "image": "./images/slow-dance-in-a-parking-lot"
+    }
+]

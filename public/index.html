@@ -13,9 +13,9 @@
             <h1>DJ DAYS</h1>
         </header>
         <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
+            <a href="#"><li>Find a Song</li></a>
             <a href="#"><li>Add a Song</li></a>
+            <a href="#"><li>About</li></a>
             <a href="#"><li>Contact Us</li></a>
         </ul>
         <footer id="nav-footer">
@@ -23,163 +23,127 @@
         </footer>
     </nav>
     <main>
-        <section id="main-visual-container">
-            <!-- <div id="current-song-cover-art">
-                <div id="cover-art">
-                    <img src="./images/pexels-medhat-ayad-447592.jpg" alt="A mono tone arrangement of fruniture">
+        <section id="main-header">
+            <div id="now-playing-visual">
+                <!-- <img src="../data/images/no-music.png" alt="no-music-playing"> -->
+                <!-- <audio controls autoplay>
+                    <source src="" type="audio/mp3">
+                </audio> -->
+            </div>
+            <!-- <div id="now-playing-info">
+                <div id="info-banner">
+                    <h3>Simple Things by Test Test</h3>
                 </div>
             </div> -->
-            <div>
-                <div id="current-song">
-                    <div id="info-banner">
-                        <h3>Simple Things by Test Test</h3>
-                    </div>
+        </section>
+        <section class="main-content">
+            <div id="music-finder-container">
+                <legend>
+                    <label for="music-search-input">Search:</label>
+                    <input type="text" id="music-search-input"><button id="music-search-btn" >Find</button>
+                </legend>
+                <p>Preset Search Filters: </p>
+                <div id="search-filters">
+                    <a href="#">All</a><a href="#">A-Z</a><a href="#">Album</a><a href="#">Favorites</a>
                 </div>
-                <audio controls autoplay>
-                    <source src="" type="audio/mp3">
-                </audio>
+            </div>
+            <div id="jukebox">
+                <ul id="music-cards">
+                    <li>
+                        <div class="album-container">
+                            <img src="./images/eminem.jpeg" alt="Music Artist Eminem">
+                            <div class="album-content">
+                                <h3>Mockingbird</h3>
+                                <p>Eminem</p>
+                                <a href="#" class="album-select-btn">
+                                    More
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="album-container">
+                            <img src="./images/little-bit-better.jpg" alt="cover art for song">
+                            <div class="album-content">
+                                <h3>Little Bit Better</h3>
+                                <p>by Cakeb Hearn & Rosie</p>
+                                <a href="#" class="album-select-btn">
+                                    More
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="album-container">
+                            <img src="./images/at-least.jpg" alt="A male hugging a female from the back and the the female leaning on him looking at the camera">
+                            <div class="album-content">
+                                <h3>At Least</h3>
+                                <p>by Jessica Baio</p>
+                                <a href="#" class="album-select-btn">
+                                    More
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="album-container">
+                            <img src="./images/flip-it.jpg" alt="A collage of different wall art">
+                            <div class="album-content">
+                                <h3>Flip It</h3>
+                                <p>by Levity</p>
+                                <a href="#" class="album-select-btn">
+                                    More
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="album-container">
+                            <img src="./images/changes.webp" alt="Jeremih leaning on the hood of a car">
+                            <div class="album-content">
+                                <h3>Changes</h3>
+                                <p>by Jeremih</p>
+                                <a href="#" class="album-select-btn">
+                                    More
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="album-container">
+                            <img src="./images/invitation.jpg" alt="Assorted bedroom fruniture in disray with a door in the center">
+                            <div class="album-content">
+                                <h3>Invitation ft. Gaeko</h3>
+                                <p>by Junny</p>
+                                <a href="#" class="album-select-btn">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="album-container">
+                            <img src="./images/slow-dance-in-a-parking-lot.jpg" alt="artist sitting on a chair looking off into the distance">
+                            <div class="album-content">
+                                <h3>Slow Dance In A Parking Lot</h3>
+                                <p>by Jordan Davis</p>
+                                <a href="#" class="album-select-btn">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <div id="home-intro">
+        <!-- <section class="main-content">
             <h1>The DJ of the future!</h1>
             <h2>A dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. Features allow users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the "now playing" music.</h2>
-            <p>What are we listening to today?</p>
-        </div>
-        <div id="about-content">
-            <p>A dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. Features allow users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the "now playing" music.</p>
-        </div>
-        <div id="nav-options">
-            <div>
-                <input type="text" id="music-search-input"><button id="music-search-btn" ><h2>Search</h2></button>
-            </div>
-            <div>
-                <h4>Need help? Try these preset search <a href="#" id="search-filter-visibility">filters</a></h4><nav id="search-filters"><h3><a href="#">All</a><a href="#">A-Z</a><a href="#">Album</a><a href="#">Favorites</a></h3></nav>
-            </div>
-        </div>
-        <div id="jukebox">
-            <ul id="music-cards">
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-matthias-groeneveld-3916058.jpg" alt="A closeup of the needle on a record player">
-                        <div class="album-content">
-                            <h3>Broken Record</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-pixabay-417458.jpg" alt="concert lights of various colors">
-                        <div class="album-content">
-                            <h3>Light Show</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-anastasia-barth-2860991.jpg" alt="A female leaning on a male with both their backs against the fence">
-                        <div class="album-content">
-                            <h3>On The Fence</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-eric-esma-894156.jpg" alt="A male artist speaking into a mic">
-                        <div class="album-content">
-                            <h3>Solo Again</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-kourosh-qaffari-1921168.jpg" alt="A female in the middle of the forest running her hands through her hair">
-                        <div class="album-content">
-                            <h3>Evergreen</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-luca-nardone-3651845.jpg" alt="A male with their head laid down on the keys of a piano">
-                        <div class="album-content">
-                            <h3>Look, No hands!</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-mali-maeder-802195.jpg" alt="Male walking past a mural of Tupac">
-                        <div class="album-content">
-                            <h3>Inspired</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-mali-maeder-219101.jpg" alt="A DJ at their turntable turning knobs">
-                        <div class="album-content">
-                            <h3>Remix</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/pexels-medhat-ayad-447592.jpg" alt="A mono tone arrangement of fruniture">
-                        <div class="album-content">
-                            <h3>Simple Things</h3>
-                            <p>by Test Test</p>
-                            <a href="#" class="album-select-btn">
-                                More
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="album-container">
-                        <img src="./images/sorry emoji.jpeg" alt="A sad emoji holding up a sorry sign">
-                        <div class="album-content">
-                            <h3>Can't find your song?</h3>
-                            <br>
-                            <a href="#" class="album-select-btn">
-                                Add A New Song
-                            </a>
-                        </div>
-                    </div> 
-                </li>
-            </ul>
-        </div>
+        </section>
+        <section class="main-content">
+
+        </section>
+        <section class="main-content">
+
+        </section> -->
     </main>
     <!-- <footer>
         <div id="current-song-cover-art">

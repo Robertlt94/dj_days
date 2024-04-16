@@ -7,15 +7,15 @@
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     font-family: "Prata", serif;
     color: #fff;
 }
 
 nav {
     height: 100vh;
-    background-color: #292F36;
+    background-color: #0C2D48;
     width: 20vw;
     position: fixed;
     color: #fff;
@@ -55,6 +55,8 @@ nav ul a {
     padding: 20px 20px;
     text-decoration: none;
     color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 nav ul a:hover {
@@ -65,82 +67,69 @@ nav ul a:hover {
 };
 
 #nav-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 20vh;
-    background-color: white;
+    position: absolute;
+    bottom: 0vh;
 }
 
-#nav-footer p {
+ #nav-footer p {
     text-align: center;
     padding: 20px;
 }
 
 main {
-    background-color: #494a4e;
     width: 80vw;
     height: 100vh;
     right: 0;
     position: fixed;
 }
 
-#main-visual-container {
-    padding: 20px;
+
+#main-header {
     height: 30vh;
-    width: 100%;
-    background-image: url(../images/pexels-picjumbocom-196652.jpg);
-    background-size: cover;
-    background-position: 0 -250px;
+    width: 80vw;
+    background-color: #B1D4E0;
+    right: 0;
+    top: 0;
+    position: fixed;
 }
 
-#current-song-cover-art {
-    height: inherit;
-}
-
-#cover-art {
-    width: 100%;
-    object-fit: cover;
-    background-color: black;
-    /* transform: translate(-50%, -20%); */
-}
-
-/* #cover-art img {
-    height: 300px;
-    width: 300px;
-    animation: rotating 10s linear infinite;
+#now-playing-visual {
+    width: 1000px;
+    height: 1000px;
     border-radius: 50%;
-    border: #fff solid 1px;
-} */
+    background-color: #000;
+    transform: translateY(50px);
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* @keyframes rotating {
-    from {
-        transform: rotate(0deg);
+#now-playing-visual:active {
+    transition: frontAndCenter 1s linear ease
+}
+
+@keyframe frontAndCenter {
+    to {
+
     }
     to {
-        transform: rotate(360deg);
-    }
-} */
 
-/* #cover-art:hover {
-    transition: transform 1s ease;
-    transform: translateY(-50%);
-} */
+    }
+}
 
 #current-song-info {
-    max-width: 100%;
+    max-width: 800vw;
     overflow: hidden;
     mask: linear-gradient(
         90deg, 
         transparent, 
-        blue 20%,
-        blue 80%,
+        #fff 20%,
+        #fff 80%,
         transparent
     );
 }
 
 #info-banner {
-    color: #fff;
+    color: #000;
     letter-spacing: 1px;
 }
 
@@ -164,86 +153,36 @@ audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
   color: #fff;
 }
 
-#about-content {
-    flex: 1fr;
-    color: #fff;
+.main-content {
+    width: 80vw;
+    height: 70vh;
+    background-color: #145DA0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+#music-finder-container {
+    text-align: center;
+    width: inherit;
+    padding: 20px;
+    height: 20vh;
+}
+
+#music-finder-container label {
     font-size: 30px;
-}
-
-#about-dj-days div h1 {
-    box-shadow: inset -3px -1px 3px #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-#about-dj-days div p {
-    padding: 20px;
-}
-
-#about-content p {
-    padding: 20px;
-    font: 50px;
-}
-
-
-
-#nav-options {
-    text-align: center;
-    padding: 20px;
-}
-#nav-options div {
-    padding: 20px;
-}
-
-#nav-options div h3, h4 {
     color: #fff;
-    padding: 20px;
-}
-
-#search-filter-visibility {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: solid 2px underline #fff;
-    letter-spacing: 2px;
-    border-bottom: #ffffff;
-}
-
-#search-filter-visibility:hover {
-    color: #b1aaff;
-    text-decoration: solid 2px underline #b1aaff;
-}
-
-/* onclick with JS to toggle visibility */
-#search-filters {
-    visibility: visible;
-}
-
-#search-filters a {
-    text-decoration: none;
-    color: #fff;
-    margin: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-}
-
-#search-filters a:hover {
-    text-decoration: underline;
-    color: #000;
-    background-color: #fff;
 }
 
 input {
     padding: 10px 20px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    border: 0;
     border-bottom: #fff solid 1px;
     background-color: transparent;
     caret-color: #fff;
     color: #fff;
     letter-spacing: 1px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 input:focus {
@@ -252,35 +191,75 @@ input:focus {
     border-bottom: #fff solid 2px;
 }
 
-#nav-options button {
+ button {
     padding: 10px 20px;
     background-color: #ffffff;
     border-radius: 50px;
     font-weight: bold;
     border: none;
-
+    font-size: 20px;
 }
 
-#jukebox ul{
+#music-finder-container p {
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+#music-finder-container  {
+    flex: 1;
+    color: #fff;
+    margin: 20px;
+}
+
+#search-filters a {
+    flex: 1;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#search-filters a:hover {
+    text-decoration: underline;
+    color: #0C2D48;
+    background-color: #fff;
+}
+
+#jukebox {
+    height: auto;
+    overflow-y: scroll;
+    margin: 20px;
+    padding: 20px;
+}
+
+#jukebox ul {
     justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 20px;
-    row-gap: 20px;
-    height: 100%;
-    padding-bottom: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-auto-rows: auto; */
+    row-gap: 30px;
+    column-gap: 30px;
+    height: 40vh;
+    width: 80vw;
 }
 
 #jukebox li {
     list-style-type: none;
+    flex: 1;
+    width: 400px;
 }
 
 .album-container {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 375px;
+    height: 375px;
     overflow: hidden;
-    box-shadow: 0 15px 15px -10px #ffffff8a;
+    box-shadow: 0 20px 20px 5px #0C2D48;
     border-radius: 10px;
 }
 
@@ -288,8 +267,8 @@ input:focus {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    height: inherit;
     object-fit: cover;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -306,9 +285,9 @@ input:focus {
 }
 
 .album-container:hover {
-    width: 110%;
-    height: 110%;
-    transform: translate(-10px,-10px);
+    width: 440px;
+    height: 440px;
+    transform: translate(-20px,-20px);
 }
 
 .album-container:hover img {
@@ -323,4 +302,5 @@ input:focus {
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: 100%;
     color: black;
+    letter-spacing: 2px;
 }
