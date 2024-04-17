@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+form input:hover {
+    cursor: text;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -159,7 +167,29 @@ audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
     background-color: #145DA0;
     right: 0;
     bottom: 0;
-    position: fixed;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+}
+
+#find-a-song-container {
+    /* visibility: visible; */
+    visibility: hidden;
+}
+
+#add-a-song-container {
+    /* visibility: visible; */
+    visibility: hidden;
+}
+
+#about-container {
+    visibility: visible;
+    /* visibility: hidden; */
+}
+
+#contact-us-container {
+    /* visibility: visible; */
+    visibility: hidden;
 }
 
 #music-finder-container {
@@ -174,7 +204,7 @@ audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
     color: #fff;
 }
 
-input {
+#music-finder-container input {
     padding: 10px 20px;
     border: 0;
     border-bottom: #fff solid 1px;
@@ -185,18 +215,18 @@ input {
     font-size: 20px;
 }
 
-input:focus {
+#music-finder-container input:focus {
     outline: 0;
     font-weight: bold;
     border-bottom: #fff solid 2px;
 }
 
- button {
+button {
     padding: 10px 20px;
+    margin: 10px;
     background-color: #ffffff;
     border-radius: 50px;
     font-weight: bold;
-    border: none;
     font-size: 20px;
 }
 
@@ -303,4 +333,48 @@ input:focus {
     opacity: 100%;
     color: black;
     letter-spacing: 2px;
+}
+
+#add-a-song {
+    margin: 40px;
+    color: #fff;
+}
+
+#add-a-song form {
+    margin: 40px;
+}
+
+#add-a-song fieldset {
+    text-align: center;
+    border-color: #fff;
+    border-radius: 10pt;
+    border-width: 3px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 3fr;
+    row-gap: 20px;
+}
+
+#add-a-song legend {
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+
+#add-a-song form label {
+    letter-spacing: 2px;
+}
+
+#add-a-song form input {
+    height: 20px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 8pt;
+    font-size: 20px;
+}
+
+#add-a-song form button {
+    float: right;
 }
