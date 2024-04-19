@@ -183,13 +183,13 @@ audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
 }
 
 #about-container {
-    visibility: visible;
-    /* visibility: hidden; */
+    /* visibility: visible; */
+    visibility: hidden;
 }
 
 #contact-us-container {
-    /* visibility: visible; */
-    visibility: hidden;
+    visibility: visible;
+    /* visibility: hidden; */
 }
 
 #music-finder-container {
@@ -377,4 +377,42 @@ button {
 
 #add-a-song form button {
     float: right;
+}
+
+#about-container {
+    background-image: url(../images/about-dj-days.jpg);
+    background-size: cover;
+}
+
+#about-background-shade {
+    background-color: #145ca086;
+    height: 100%;
+}
+
+#about-content {
+    padding-top: 100px;
+    padding-left: 40px;
+}
+
+#about-content h1 {
+    border-top-left-radius: 8pt;
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 30px;
+    background-color: #101720eb;
+    font-weight: bolder;
+    letter-spacing: 2px; 
+}
+
+#about-content p {
+    padding: 70px;
+    padding-left: 150px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    border-bottom-left-radius: 8pt;
+    background-color: #101720eb;
+}
+
+#contact-us-container {
+    
 }
