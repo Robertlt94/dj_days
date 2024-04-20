@@ -13,10 +13,10 @@
             <h1>DJ DAYS</h1>
         </header>
         <ul>
-            <a href="#" id="nav-find-a-song" onClick="showPage(this.id)"><li>Find a Song</li></a>
-            <a href="#" id="nav-add-a-song" onClick="showPage(this.id)"><li>Add a Song</li></a>
-            <a href="#" id="nav-about" onClick="showPage(this.id)"><li>About</li></a>
-            <a href="#" id="nav-contact-us" onClick="showPage(this.id)"><li>Contact Us</li></a>
+            <a id="nav-find-a-song" onClick="showPage(this.id)"><li>Find a Song</li></a>
+            <a id="nav-add-a-song" onClick="showPage(this.id)"><li>Add a Song</li></a>
+            <a id="nav-about" onClick="showPage(this.id)"><li>About</li></a>
+            <a id="nav-contact-us" onClick="showPage(this.id)"><li>Contact Us</li></a>
         </ul>
         <footer id="nav-footer">
             <p>DJ DAYS &copy;</p>
@@ -30,11 +30,11 @@
                     <source src="" type="audio/mp3">
                 </audio> -->
             </div>
-            <!-- <div id="now-playing-info">
+            <div id="now-playing-info">
                 <div id="info-banner">
                     <h3>Simple Things by Test Test</h3>
                 </div>
-            </div> -->
+            </div>
         </section>
         <section class="main-content" id="find-a-song-container">
             <div id="music-finder-container">
@@ -49,7 +49,7 @@
             </div>
             <div id="jukebox">
                 <ul id="music-cards">
-                    <li>
+                    <!-- <li>
                         <div class="album-container">
                             <img src="./images/eminem.jpeg" alt="Music Artist Eminem">
                             <div class="album-content">
@@ -130,13 +130,13 @@
                                 </a>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </section>
         <section class="main-content" id="add-a-song-container">
             <div id="add-a-song">
-                <form action="#">
+                <form id="song-form">
                     <fieldset>
                         <legend>Add a Song:</legend>
                         <label for="title">Title:</label>
@@ -144,11 +144,11 @@
                         <label for="artist">Artist:</label>
                         <input type="text" name="artist" id="artist-input" placeholder="e.g. Desi Valentine" required>
                         <label for="release-date">Released Year:</label>
-                        <input type="text" name="release-date" id="release-date-input" placeholder="e.g. 2021" required>
+                        <input type="number" name="release-date" id="release-date-input" placeholder="e.g. 2021"  required>
                         <label for="url">Url:</label>
                         <input type="text" name="url" id="url-input" placeholder="e.g. https://www.youtube.com/watch?v=JarptyNXHyQ&ab_channel=desivalentinemusic" required>
                         <label for="image">Cover Art:</label>
-                        <input type="file" name="image" id="image-input"o>
+                        <input type="file" name="image" id="image-input">
                     </fieldset>
                     <button type="submit">Add to Music Library</button>
                 </form>
@@ -158,13 +158,15 @@
             <div id="about-background-shade">
                 <div id="about-content">
                         <h1>About DJ Days</h1>
-                        <p>A dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. Features allow users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the "now playing" music.</p>
+                        <div>
+                            <p>A dynamic single-webpage application designed to bring music lovers and collectors a virtual DJ booth at their fingertips. Features allow users to see which album is currently playing, browse through a comprehensive list of albums, add new albums to their collection, and select any album to be the "now playing" music.</p>
+                        </div>
                 </div>
             </div>
         </section>
         <section class="main-content" id="contact-us-container">
             <div id="contact-us-content">
-                <div id="contact-us-columns">
+                <div id="contact-us-text">
                     <div id="contact-title">
                         <h1>Contact Us</h1>
                     </div>

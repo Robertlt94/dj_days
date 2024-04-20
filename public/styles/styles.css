@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-button:hover, a:hover {
+button:hover, a:hover, .album-container {
     cursor: pointer;
 }
 
@@ -95,7 +95,9 @@ main {
 #main-header {
     height: 30vh;
     width: 80vw;
-    background-color: #B1D4E0;
+    /* background-color: #B1D4E0; */
+    background-image: url(../images/header-background.jpg);
+    background-size: contain;
     right: 0;
     top: 0;
     position: fixed;
@@ -173,8 +175,8 @@ audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
 }
 
 #find-a-song-container {
-    /* visibility: visible; */
-    visibility: hidden;
+    visibility: visible;
+    /* visibility: hidden; */
 }
 
 #add-a-song-container {
@@ -189,7 +191,7 @@ audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
 
 #contact-us-container {
     /* visibility: visible; */
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 #music-finder-container {
@@ -320,6 +322,10 @@ button {
     transform: translate(-20px,-20px);
 }
 
+.album-container:active {
+    box-shadow: inset 0 0 2 5px #fff;
+}
+
 .album-container:hover img {
     object-fit: cover(50%);
 }
@@ -377,11 +383,13 @@ button {
 
 #add-a-song form button {
     float: right;
+    background-color: #fff;
 }
 
 #about-container {
     background-image: url(../images/about-dj-days.jpg);
     background-size: cover;
+    height: 100vh;
 }
 
 #about-background-shade {
@@ -404,16 +412,27 @@ button {
     letter-spacing: 2px; 
 }
 
-#about-content p {
-    padding: 70px;
+#about-content div {
+    padding-top: 40px;
     padding-left: 150px;
-    font-size: 30px;
-    letter-spacing: 2px;
+    padding-bottom:80px;
     border-bottom-left-radius: 8pt;
     background-color: #101720eb;
 }
 
-#contact-us-columns {
+#about-content p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    border: solid 3px #fff;
+    border-right: none;
+    padding: 40px;
+}
+
+#contact-us-container {
+    height: 90vh;
+}
+
+#contact-us-text {
     background-color: #0C2D48;
     display: flex;
     flex: auto;
@@ -437,8 +456,9 @@ button {
 
 #contact-info {
     list-style-type: none;
-    border-left: solid 3px; #fff;
+    border-left: solid 3px #fff;
     padding: 20px;
+    letter-spacing: 5px;
 }
 
 #contact-us-image {
