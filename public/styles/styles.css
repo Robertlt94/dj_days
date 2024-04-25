@@ -103,23 +103,39 @@ main {
     position: fixed;
 }
 
-#now-playing-visual {
+#current-song-visual {
     width: 1000px;
     height: 1000px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: transparent;
     transform: translateY(50px);
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
-#now-playing-visual:active {
+#current-song-visual img {
+    width: 1000px;
+    height: 1000px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#current-song-visual:active {
     transition: frontAndCenter 1s linear ease
 }
 
 @keyframe frontAndCenter {
     to {
-
+        
     }
     to {
 
@@ -139,7 +155,7 @@ main {
 }
 
 #info-banner {
-    color: #000;
+    color: #fff;
     letter-spacing: 1px;
 }
 

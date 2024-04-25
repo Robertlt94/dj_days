@@ -24,15 +24,10 @@
     </nav>
     <main>
         <section id="main-header">
-            <div id="now-playing-visual">
-                <!-- <img src="../data/images/no-music.png" alt="no-music-playing"> -->
-                <!-- <audio controls autoplay>
-                    <source src="" type="audio/mp3">
-                </audio> -->
+            <div id="current-song-visual">
             </div>
-            <div id="now-playing-info">
+            <div id="current-song-info">
                 <div id="info-banner">
-                    <h3>Simple Things by Test Test</h3>
                 </div>
             </div>
         </section>
@@ -42,6 +37,7 @@
                     <label for="music-search-input">Search:</label>
                     <input type="text" id="music-search-input"><button id="music-search-btn" >Find</button>
                 </legend>
+                <!-- search filters that still need to be worked on -->
                 <p>Preset Search Filters: </p>
                 <div id="search-filters">
                     <a href="#">All</a><a href="#">A-Z</a><a href="#">Album</a><a href="#">Favorites</a>
@@ -49,88 +45,6 @@
             </div>
             <div id="jukebox">
                 <ul id="music-cards">
-                    <!-- <li>
-                        <div class="album-container">
-                            <img src="./images/eminem.jpeg" alt="Music Artist Eminem">
-                            <div class="album-content">
-                                <h3>Mockingbird</h3>
-                                <p>Eminem</p>
-                                <a href="#" class="album-select-btn">
-                                    More
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="album-container">
-                            <img src="./images/little-bit-better.jpg" alt="cover art for song">
-                            <div class="album-content">
-                                <h3>Little Bit Better</h3>
-                                <p>by Caleb Hearn & Rosie</p>
-                                <a href="#" class="album-select-btn">
-                                    More
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="album-container">
-                            <img src="./images/at-least.jpg" alt="A male hugging a female from the back and the the female leaning on him looking at the camera">
-                            <div class="album-content">
-                                <h3>At Least</h3>
-                                <p>by Jessica Baio</p>
-                                <a href="#" class="album-select-btn">
-                                    More
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="album-container">
-                            <img src="./images/flip-it.jpg" alt="A collage of different wall art">
-                            <div class="album-content">
-                                <h3>Flip It</h3>
-                                <p>by Levity</p>
-                                <a href="#" class="album-select-btn">
-                                    More
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="album-container">
-                            <img src="./images/changes.webp" alt="Jeremih leaning on the hood of a car">
-                            <div class="album-content">
-                                <h3>Changes</h3>
-                                <p>by Jeremih</p>
-                                <a href="#" class="album-select-btn">
-                                    More
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="album-container">
-                            <img src="./images/invitation.jpg" alt="Assorted bedroom fruniture in disray with a door in the center">
-                            <div class="album-content">
-                                <h3>Invitation ft. Gaeko</h3>
-                                <p>by Junny</p>
-                                <a href="#" class="album-select-btn">
-                                    More
-                                </a>
-                            </div>
-                        </div>
-                        <div class="album-container">
-                            <img src="./images/slow-dance-in-a-parking-lot.jpg" alt="artist sitting on a chair looking off into the distance">
-                            <div class="album-content">
-                                <h3>Slow Dance In A Parking Lot</h3>
-                                <p>by Jordan Davis</p>
-                                <a href="#" class="album-select-btn">
-                                    More
-                                </a>
-                            </div>
-                        </div>
-                    </li> -->
                 </ul>
             </div>
         </section>
@@ -146,9 +60,9 @@
                         <label for="release-date">Released Year:</label>
                         <input type="number" name="release-date" id="release-date-input" placeholder="e.g. 2021"  required>
                         <label for="url">Url:</label>
-                        <input type="text" name="url" id="url-input" placeholder="e.g. https://www.youtube.com/watch?v=JarptyNXHyQ&ab_channel=desivalentinemusic" required>
+                        <input type="url" name="url" id="url-input" placeholder="e.g. https://www.youtube.com/watch?v=JarptyNXHyQ&ab_channel=desivalentinemusic" required>
                         <label for="image">Cover Art:</label>
-                        <input type="file" name="image" id="image-input">
+                        <input type="text" name="image" id="image-input" placeholder="e.g. https://images.genius.com/856ad4ca2aa08465fc744af5e245260f.1000x1000x1.jpg" optional>
                     </fieldset>
                     <button type="submit">Add to Music Library</button>
                 </form>

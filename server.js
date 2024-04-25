@@ -13,7 +13,7 @@ app.use(express.static('public'));
 let musicLibrary = [];
 
 function loadMusicLibrary() {
-    fs.readFile(path.join(_dirname, "data", "musicLibrary.json"), 'utf8', (err, data) => {
+    fs.readFile(path.join(__dirname, "data", "musicLibrary.json"), 'utf8', (err, data) => {
         if(err){
             console.log("error reading library: ", err);
             return;
@@ -30,7 +30,7 @@ app.post('/musicLibrary', (req, res) => {
     const newSong = req.body;
     musicLibrary.push(newSong);
 
-    fs.writeFile(path.join(_dirname, "data", "musicLibrary.json", JSON.stringify(musicLibrary, null, 2), 'utf8', (err) => {
+    fs.writeFile(path.join(__dirname, "data", "musicLibrary.json", JSON.stringify(musicLibrary, null, 2), 'utf8', (err) => {
         if(err){
             res.status(500).json({error: "Error writing the song into the JSON"});
             return;
@@ -41,4 +41,5 @@ app.post('/musicLibrary', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is up on https://localhost:${PORT}`);
+    loadMusicLibrary();
 })

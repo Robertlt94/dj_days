@@ -1,58 +1,51 @@
 [
     {
-        "title": "Select a song to play music",
-        "artist": "",
-        "released": "",
-        "url": "",
-        "image": "./images/no-music"
-    },
-    {
         "title": "Mockingbird",
         "artist": "Eminem",
         "released": "2004",
-        "url": "https://www.youtube.com/watch?v=37V3b39_EXw&ab_channel=DanMusic",
-        "image": "./images/eminem"
+        "url": "https://music.youtube.com/watch?v=9kznlAwE-8o&si=yTuVY2i0D7Wkx9C8&t=1",
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Mockingbird_%28Eminem_song%29_cover.jpg"
     },
     {
         "title": "Little Bit Better",
         "artist": "Caleb Hearn & Rosie",
         "released": "2024",
         "url": "https://www.youtube.com/watch?v=u9GqI2zfOZc",
-        "image": "./images/little-bit-better"
+        "image": "https://i1.sndcdn.com/artworks-wMT90gsMMmTz-0-t500x500.png"
     },
     {
         "title": "At Least",
         "artist": "Jessica Baio",
         "released": "2022",
         "url": "https://www.youtube.com/watch?v=MtGSGjk_5FU&ab_channel=JessicaBaio",
-        "image": "./images/at-least"
+        "image": "https://images.genius.com/6018ace0453d9ec811f0b568cdf335f4.1000x1000x1.jpg"
     },
     {
         "title": "Flip It",
         "artist": "Levity",
         "released": "2023",
         "url": "https://www.youtube.com/watch?v=ZjUeXWIQ4Pc&ab_channel=DubstepuNk",
-        "image": "./images/flip-it"
+        "image": "https://i1.sndcdn.com/artworks-Bf2cAMpk7dLKiahQ-B1T31Q-t500x500.jpg"
     },
     {
         "title": "Changes",
         "artist": "Jeremih",
         "released": "2022",
         "url": "https://www.youtube.com/watch?v=AyjcebbGeT8&ab_channel=OrbitalMusic",
-        "image": "./images/changes"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0fiUFeyYioWR86XSoqFuM1mEQP4bjPrHuh-G-sMGmg&s"
     },
     {
         "title": "Invitation Ft. Gaeko",
         "artist": "Junny",
         "released": "2023",
         "url": "https://www.youtube.com/watch?v=Ov4XVKcgJbg&ab_channel=JUNNY",
-        "image": "./images/invitation"
+        "image": "https://i.scdn.co/image/ab67616d0000b2735d25b3030cc73445764e344d"
     },
     {
         "title": "Slow Dance In A Parking Lot",
         "artist": "Jordan Davis",
         "released": "2018",
         "url": "https://www.youtube.com/watch?v=HTdmcNy_cbs&ab_channel=JenniOrdo%C3%B1ez",
-        "image": "./images/slow-dance-in-a-parking-lot"
+        "image": "https://i.ytimg.com/vi/xrq_xtm_qqQ/maxresdefault.jpg"
     }
 ]
